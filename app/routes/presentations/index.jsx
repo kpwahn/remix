@@ -18,7 +18,7 @@ export default function Presentations() {
             <Link to="new">New</Link>
             <ul>
                 {data.map(x => (
-                    <li>{x.name}</li>
+                    <li key={x.name}>{x.name}</li>
                 ))}
             </ul>
         </>
