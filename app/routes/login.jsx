@@ -1,5 +1,4 @@
 import { Form } from "remix";
-import { supabase } from "~/entry.server";
 
 export const action = async ({request}) => {
     const formData = await request.formData();
@@ -7,12 +6,7 @@ export const action = async ({request}) => {
     const email = formData.get("email");
     const password = formData.get("password");
 
-    const signIn = await supabase.auth.signIn({
-        email,
-        password,
-    })
-
-    return signIn;
+    return null;
 }
 
 export default function Login() {
