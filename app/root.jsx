@@ -1,4 +1,4 @@
-import { Links, LiveReload, Outlet } from "remix";
+import { Link, Links, LiveReload, Outlet } from "remix";
 import reset from './styles/reset.css';
 
 export const links = () => {
@@ -14,6 +14,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Link to="/">Home</Link>
         <Outlet />
         {process.env.NODE_ENV === "development" ? (
           <LiveReload />

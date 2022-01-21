@@ -10,7 +10,7 @@ export default function IndexRoute() {
       <>
         <h1>Am I Losing You?</h1>
         <p>Probably.</p>
-        <p>Lets be honest. Meetings take way longer than they need to. Presentations are often long winded. Do your professor even know that everyone is lost?</p>
+        <p>Lets be honest. Meetings take way longer than they need to. Presentations are often long winded. Does your professor even know that everyone is lost?</p>
         <p>It shouldn't be like this.</p>
         <Link to="/presentations">Presentations</Link>
       </>

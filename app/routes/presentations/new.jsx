@@ -1,4 +1,4 @@
-import { Form } from "remix";
+import { Form, redirect } from "remix";
 import { supabase } from "~/entry.server";
 
 export const action = async ({request}) => {
@@ -11,7 +11,7 @@ export const action = async ({request}) => {
         { name }
     ])
 
-    return data
+    return redirect('/presentations')
 }
 
 export default function New() {
