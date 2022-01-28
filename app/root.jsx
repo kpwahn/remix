@@ -1,8 +1,8 @@
 import { Link, Links, LiveReload, Outlet } from "remix";
-import reset from './styles/reset.css';
+import styles from './styles/app.css';
 
 export const links = () => {
-  return [{ rel: "stylesheet", href: reset }];
+  return [{ rel: "stylesheet", href: styles }];
 };
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
         <title>Am I losing you?</title>
         <Links />
       </head>
-      <body>
+      <body className="p-4">
         <Link to="/">Home</Link>
         <Outlet />
         {process.env.NODE_ENV === "development" ? (
