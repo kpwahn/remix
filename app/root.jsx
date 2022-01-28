@@ -1,8 +1,8 @@
 import { Link, Links, LiveReload, Outlet } from "remix";
-import styles from "./styles/app.css"
+import styles from "../tailwind.css";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [{ rel: "stylesheet", href: styles }];
 }
 
 export default function App() {
@@ -13,18 +13,18 @@ export default function App() {
         <title>Am I losing you?</title>
         <Links />
       </head>
-      <body>
+      <body className="p-4 md:p-6">
         <header>
           <nav>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
             </ul>
           </nav>
         </header>
         <Outlet />
-        {process.env.NODE_ENV === "development" ? (
-          <LiveReload />
-        ) : null}
+        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
       </body>
     </html>
   );
