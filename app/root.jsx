@@ -13,11 +13,11 @@ export default function App() {
         <title>Am I losing you?</title>
         <Links />
       </head>
-      <body className="p-4">
+      <body>
         <header>
           <nav>
             <ul>
-              <li><Link className="underline" to="/">Home</Link></li>
+              <li><Link to="/">Home</Link></li>
             </ul>
           </nav>
         </header>
