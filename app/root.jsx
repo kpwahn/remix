@@ -1,9 +1,9 @@
 import { Link, Links, LiveReload, Outlet } from "remix";
-import styles from './styles/app.css';
+import styles from "./styles/app.css"
 
-export const links = () => {
-  return [{ rel: "stylesheet", href: styles }];
-};
+export function links() {
+  return [{ rel: "stylesheet", href: styles }]
+}
 
 export default function App() {
   return (
@@ -14,7 +14,13 @@ export default function App() {
         <Links />
       </head>
       <body className="p-4">
-        <Link to="/">Home</Link>
+        <header>
+          <nav>
+            <ul>
+              <li><Link className="underline" to="/">Home</Link></li>
+            </ul>
+          </nav>
+        </header>
         <Outlet />
         {process.env.NODE_ENV === "development" ? (
           <LiveReload />
