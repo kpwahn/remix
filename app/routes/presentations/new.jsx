@@ -22,7 +22,7 @@ export default function New() {
                 <label>
                     <input type="text" name="name" />
                 </label>
-                <button type="submit">Submit</button>
+                <button className="p-2 rounded-md bg-purple-500 text-white" type="submit">Submit</button>
             </Form>
         </>
     )

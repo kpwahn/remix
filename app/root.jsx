@@ -18,7 +18,7 @@ export default function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link className="underline" to="/">Home</Link>
               </li>
             </ul>
           </nav>
