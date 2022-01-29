@@ -14,7 +14,7 @@ export default function Presentations() {
     
     return (
         <>
-            <h1>Presentations</h1>
+            <h1 className="text-3xl font-bold">Presentations</h1>
             <Link to="new">New</Link>
             <ul>
                 {data.map(x => (

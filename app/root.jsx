@@ -13,17 +13,18 @@ export default function App() {
         <title>Am I losing you?</title>
         <Links />
       </head>
-      <body className="p-4 md:p-6">
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <Link className="underline" to="/">Home</Link>
-              </li>
-            </ul>
+      <body className="px-4 md:px-6">
+        <header className="fixed top-0 left-0 w-full">
+          <nav className="bg-teal-500 p-5 flex justify-between">
+            <Link to="/" className="text-white hover:underline">
+              Home
+            </Link>
+            <Link to="/presentations" className="text-white hover:underline">Presentations</Link>
           </nav>
         </header>
-        <Outlet />
+        <main className="mt-16 pt-2">
+          <Outlet />
+        </main>
         {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
       </body>
     </html>
