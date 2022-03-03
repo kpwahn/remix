@@ -20,9 +20,9 @@ export default function New() {
             <h1>New Presentaion</h1>
             <Form method="post">
                 <label>
-                    <input type="text" name="name" />
+                    <input className="border-2 border-black outline-teal-500 outline-8 rounded-md py-2 mr-2" type="text" name="name" />
                 </label>
-                <button className="p-2 rounded-md bg-purple-500 text-white" type="submit">Submit</button>
+                <button className="p-2 rounded-md bg-teal-500 hover:bg-teal-700 text-white" type="submit">Submit</button>
             </Form>
         </>
     )

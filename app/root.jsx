@@ -1,8 +1,12 @@
 import { Link, Links, LiveReload, Outlet } from "remix";
 import styles from "../tailwind.css";
+import reset from './styles/reset.css';
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: reset }
+  ];
 }
 
 export default function App() {

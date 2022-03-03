@@ -15,12 +15,12 @@ export default function Presentations() {
     return (
         <>
             <h1 className="text-3xl font-bold">Presentations</h1>
-            <Link to="new">New</Link>
             <ul>
                 {data.map(x => (
                     <li key={x.name}>{x.name}</li>
-                ))}
+                    ))}
             </ul>
+            <Link class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded" to="new">Create New</Link>
         </>
     )
 }
