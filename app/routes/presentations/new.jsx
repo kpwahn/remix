@@ -22,7 +22,7 @@ export default function New() {
                 <label>
                     <input className="border-2 border-black outline-teal-500 outline-8 rounded-md py-2 mr-2" type="text" name="name" />
                 </label>
-                <button className="p-2 rounded-md bg-teal-500 hover:bg-teal-700 text-white" type="submit">Submit</button>
+                <button className="btn" type="submit">Submit</button>
             </Form>
         </>
     )

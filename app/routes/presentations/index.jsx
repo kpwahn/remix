@@ -15,7 +15,7 @@ export default function Presentations() {
     return (
         <>
             <h1 className="text-3xl font-bold">Presentations</h1>
-            <ul>
+            <ul className="mb-4">
                 {data.map(x => (
                     <li key={x.name}>{x.name}</li>
                     ))}
